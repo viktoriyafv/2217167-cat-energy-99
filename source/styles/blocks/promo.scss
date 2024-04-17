@@ -1,0 +1,15 @@
+.promo {
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+
+  .promo__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .promo__slogan {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

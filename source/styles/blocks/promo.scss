@@ -1,5 +1,9 @@
 .promo {
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+  min-height: 480px;
+  background-image: url("../../images/index-can-mobile@1x.png"), url("../../images/background-index-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 271px, 100% 305px;
+  background-position: 50% 166px, 50% 0, 0 0;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
 

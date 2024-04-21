@@ -23,12 +23,16 @@
             srcset="images/logo-desktop.svg">
           <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml"
             srcset="images/logo-tablet.svg">
-          <img class="logo__image" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Проекта Cat Energy">
+          <img class="logo__image" src="images/logo-mobile.svg" width="190" height="38"
+            alt="Логотип Проекта Cat Energy">
         </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__image" width="24" height="24">
+            <use href="../icons/stack.svg#menu-open"></use>
+          </svg>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -63,7 +67,12 @@
       <div class="container">
         <h2 class="visually-hidden">Программы питания</h2>
         <article class="programs-list__item program">
-          <h3 class="program__title program__title--slim">похудение</h3>
+          <div class="program__wrapper">
+            <svg class="program__image" width="50" height="53">
+              <use href="../icons/stack.svg#cat-slim"></use>
+            </svg>
+            <h3 class="program__title program__title--slim">похудение</h3>
+          </div>
           <p class="program__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
             поможет вашему питомцу сбросить лишний вес.
@@ -71,7 +80,12 @@
           <a class="program__link" href="catalog.html">Каталог Slim</a>
         </article>
         <article class="programs-list__item program">
-          <h3 class="program__title program__title--pro">Набор массы</h3>
+          <div class="program__wrapper">
+              <svg class="program__image" width="67" height="50">
+                <use href="../icons/stack.svg#cat-pro"></use>
+              </svg>
+            <h3 class="program__title program__title--pro">Набор массы</h3>
+          </div>
           <p class="program__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
             необходимые мышцы!
@@ -85,21 +99,41 @@
         <h2 class="specification__title">Как это работает</h2>
         <ol class="specification__list">
           <li class="specification__item specification__item--nutrition">
+            <div class="specification__image-wrapper">
+              <svg class="specification__image" width="30" height="32">
+                <use href="../icons/stack.svg#icon-nutrition"></use>
+              </svg>
+            </div>
             <p class="specification__text">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
           <li class="specification__item specification__item--powder">
+            <div class="specification__image-wrapper">
+              <svg class="specification__image" width="26" height="29">
+                <use href="../icons/stack.svg#icon-powder"></use>
+              </svg>
+            </div>
             <p class="specification__text">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
           <li class="specification__item specification__item--change">
+            <div class="specification__image-wrapper">
+              <svg class="specification__image" width="25" height="30">
+                <use href="../icons/stack.svg#icon-change"></use>
+              </svg>
+            </div>
             <p class="specification__text">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
           <li class="specification__item specification__item--effect">
+            <div class="specification__image-wrapper">
+              <svg class="specification__image" width="26" height="31">
+                <use href="../icons/stack.svg#icon-effect"></use>
+              </svg>
+            </div>
             <p class="specification__text">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
@@ -144,6 +178,9 @@
           <div class="compare__range-bar">
             <button class="compare__range-toggle" type="button" aria-label="Передвижение слайда">
               <span class="visually-hidden">Передвижение слайда</span>
+              <svg class="compare__range-toggle-icon" width="40" height="40">
+                <use href="../icons/stack.svg#thumb"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -174,26 +211,31 @@
           <a class="social-list__link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
             <svg class="social-list__icon-vk" width="28" height="22">
-              <use href="../build/icons/stack.svg#vkontakte"></use>
+              <use href="../icons/stack.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Наш Ютюб канал</span>
+            <svg class="social-list__icon-youtube" width="28" height="22">
+              <use href="../icons/stack.svg#youtube"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграмм канал</span>
+            <svg class="social-list__icon-tg" width="28" height="22">
+              <use href="../icons/stack.svg#telegram"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <img class="copyright__logotype" src="images/logo-html.svg" width="27" height="34"
-            alt="Логотип HTML Academy">
+          <img class="copyright__logotype" src="images/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </div>

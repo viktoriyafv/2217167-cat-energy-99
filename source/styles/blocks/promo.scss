@@ -1,100 +1,91 @@
-.promo {
-  .promo__container {
-    width: 320px;
-    margin: 0 auto;
-    font-family: "Oswald", sans-serif;
-    color: #ffffff;
-    background-image: url("../../images/index-can-mobile@1x.png"), url("../../images/background-index-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 280px 270px, 320px 302px;
-    background-position: 50% 167px, 50% 0, 0 0;
-    padding: 27px 20px 0;
-    margin-bottom: 20px;
+.promo__slogan {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 302px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/index-can-mobile@2x.png"), url("../../images/background-index-mobile@2x.jpg");
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 768px;
-      background-image: url("../../images/index-can-tablet@1x.png");
-      background-repeat: no-repeat;
-      background-size: 709px 609px;
-      background-position: 50% 266px;
-      padding: 65px 120px 526px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/index-can-tablet@2x.png");
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1440px;
-      background-image: url("../../images/index-can-desktop@1x.png"), url("../../images/background-index-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: 552px 499px, 720px 694px;
-      background-position: 557px 29px, right, top;
-      padding: 110px 190px 266px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/index-can-desktop@2x.png"), url("../../images/background-index-desktop@2x.jpg");
-      }
-    }
-
-    .promo__title {
-      display: block;
-      margin: 0;
-      font-size: 36px;
-      line-height: 36px;
-      font-weight: 400;
-      text-align: center;
-      margin-bottom: 25px;
-
-      @media (min-width: $tablet-width) {
-        font-size: 60px;
-        line-height: 60px;
-        font-weight: 400;
-        color: #000000;
-        text-align: start;
-        margin-bottom: 40px;
-      }
-    }
-
-    .promo__slogan {
-      display: block;
-      font-size: 14px;
-      line-height: 14px;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 302px;
-
-      @media (min-width: $tablet-width) {
-        font-size: 20px;
-        line-height: 20px;
-        text-align: start;
-        color: #000000;
-        font-weight: 400;
-        margin-bottom: 50px;
-      }
-
-      @media (min-width: $desktop-width) {
-        margin-bottom: 52px;
-      }
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 50px;
   }
 
-  .promo__button {
-    display: block;
-    width: 280px;
-    margin: 0 auto;
-    padding: 10px 44px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 26px;
-      width: 244px;
-      padding: 14px 26px;
-      margin: 0;
+.promo__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 10px 44px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    padding: 14px 26px;
+    margin: 0;
+  }
+}
+
+.promo__title {
+  display: block;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000000;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+}
+
+.promo__container {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  background-image: url("../../images/background-index-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: 50% 0, 0 0;
+  padding: 27px 20px 0;
+  margin-bottom: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/background-index-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    background-image: none;
+    padding: 65px 120px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    background-image: url("../../images/background-index-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    background-position: right, top;
+    padding: 110px 190px 20px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/background-index-desktop@2x.jpg");
     }
   }
 }

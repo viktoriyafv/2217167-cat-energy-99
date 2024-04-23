@@ -1,5 +1,15 @@
+.site-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .site-list a {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
 }

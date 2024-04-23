@@ -1,6 +1,33 @@
 .main-nav {
   .main-nav__toggle {
+    width: 24px;
+    height: 24px;
     background-color: transparent;
+    background-image: url("../../icons/stack.svg#menu-open");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
     border: none;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
+
+  .main-nav__list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: $tablet-width) {
+      width: 436px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 475px;
+    }
+  }
+}
+
+.main-nav__list a {
+  color: #000000;
 }

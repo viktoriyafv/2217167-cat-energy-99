@@ -1,0 +1,41 @@
+.programs-list {
+  display: flex;
+  flex-direction: column;
+
+  .programs-list__item {
+    width: 280px;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  .programs-list__item--slim {
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-size: 50px 53px;
+    background-position: 20px 21px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 200px 211px;
+      background-position: 455px 81px;
+    }
+  }
+
+  .programs-list__item--pro {
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-size: 67px 50px;
+    background-position: 13px 24px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../icons/stack.svg#cat-pro-tablet");
+      background-size: 268px 200px;
+      background-position: 411px 91px;
+    }
+  }
+}

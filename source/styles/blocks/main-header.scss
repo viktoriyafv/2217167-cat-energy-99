@@ -3,7 +3,20 @@
   color: #000000;
   font-size: 20px;
   line-height: 20px;
+  background-image: none;
+  margin: 0 auto;
 
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    background-image: url("../../images/background-index-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    background-position: 100% 0, 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/background-index-desktop@2x.jpg");
+    }
+  }
 
   .main-header__container {
     display: flex;

@@ -7,9 +7,14 @@
   }
 }
 
-.site-list a {
+.site-list__link {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }

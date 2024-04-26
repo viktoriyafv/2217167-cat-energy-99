@@ -2,4 +2,40 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+.social-list__item {
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--vk {
+    background-image: url("../../icons/stack.svg#vkontakte");
+    background-size: 28px 22px;
+    margin-right: 24px;
+  }
+
+  &--youtube {
+    background-image: url("../../icons/stack.svg#youtube");
+    background-size: 28px 22px;
+    margin-right: 24px;
+  }
+
+  &--telegram {
+    background-image: url("../../icons/stack.svg#telegram");
+    background-size: 28px 22px;
+  }
 }

@@ -1,7 +1,110 @@
 .catalog__list {
-  .catalog-list__button--toggle {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+
+  .catalog-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    padding: 20px 20px 24px;
+    border-bottom: 1px solid #ebebeb;
+
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      border: none;
+      background-image: linear-gradient(to top, #f2f2f2 84%, #ffffff 20%);
+      padding: 10px 37px 40px;
+    }
+
+    &--products {
+      background-image: none;
+      height: 429px;
+      border: 2px solid #f2f2f2;
+      margin-top: 82px;
+      padding: 50px 77px 40px;
+    }
+  }
+
+  .catalog-list__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+      margin-bottom: 27px;
+    }
+  }
+
+  .catalog-list__link {
+    width: 140px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+    }
+  }
+}
+
+.catalog-list__button {
+  padding: 10px 109px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 95px 10px 94px;
+  }
+
+  &--products {
+    width: 280px;
     background-color: #f2f2f2;
     border: none;
     color: #444444;
+    padding: 10px 94px;
+
+    @media (min-width: $tablet-width) {
+      width: 250px;
+      padding: 10px 80px 10px 79px;
+    }
+  }
+}
+
+.catalog-list__content {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  &--products {
+    display: block;
+    width: 280px;
+    margin-bottom: 8px;
+    text-align: center;
+    background-image: url("../../icons/stack.svg#plus");
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    background-size: 30px 30px;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      padding: 110px 77px 40px;
+      background-size: 60px 60px;
+    }
   }
 }

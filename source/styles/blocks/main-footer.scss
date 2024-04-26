@@ -2,6 +2,7 @@
   background-color: #f2f2f2;
 
   .main-footer__container {
+    width: 320px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -9,6 +10,7 @@
     padding: 40px 20px;
 
     @media (min-width: $tablet-width) {
+      width: 768px;
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: center;
@@ -16,6 +18,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 1440px;
       padding: 66px 110px;
     }
   }
@@ -28,6 +31,7 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
+      width: 128px;
       padding: 0;
       border-bottom: none;
     }

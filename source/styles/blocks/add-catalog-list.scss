@@ -1,9 +1,11 @@
 .add-catalog-list {
   .add-catalog-list__title {
-    font-family: "Oswald", sans-serif;
+    font-family: $secondary-font, sans-serif;
     color: #222222;
     font-size: 16px;
     line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
   }
 
   .add-catalog-list__key {
@@ -12,5 +14,21 @@
 
   .add-catalog-list__value {
     line-height: 14px;
+  }
+
+  .add-catalog-list__item {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0 18px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .add-catalog-list__button {
+    padding: 10px 109px;
+  }
+
+  .add-catalog-list__description {
+    display: flex;
+    justify-content: space-between;
   }
 }

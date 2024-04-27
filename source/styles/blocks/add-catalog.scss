@@ -1,8 +1,37 @@
 .add-catalog {
-  .add-catalog__title {
-    font-family: "Oswald", sans-serif;
-    color: #000000;
-    font-size: 24px;
-    line-height: 24px;
+  .add-catalog__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
   }
+}
+
+.add-catalog__title {
+  display: block;
+  position: relative;
+  width: 320px;
+  font-family: $secondary-font, sans-serif;
+  color: #000000;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.add-catalog__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 20px 0;
 }

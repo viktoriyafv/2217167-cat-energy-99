@@ -1,10 +1,10 @@
 .catalog {
   .catalog__container {
-    width: 320px;
+    min-width: 320px;
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      width: 768px;
+      min-width: 768px;
       padding: 65px 30px 74px;
     }
   }
@@ -12,7 +12,7 @@
   .catalog__title {
     display: block;
     width: 320px;
-    font-family: $secondary-font, sans-serif;
+    font-family: $secondary-font;
     color: #000000;
     font-size: 36px;
     line-height: 36px;
@@ -20,7 +20,6 @@
     margin: 0;
     padding: 26px 30px 41px;
     border-bottom: 1px solid #ebebeb;
-    border-top: 1px solid #ebebeb;
 
     @media (min-width: $tablet-width) {
       width: 500px;

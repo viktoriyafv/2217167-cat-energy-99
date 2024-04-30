@@ -1,15 +1,28 @@
 .subscribe {
-  font-family: $secondary-font, sans-serif;
+  font-family: $secondary-font;
   color: #111111;
   line-height: 24px;
 
   .subscribe__title {
+    display: block;
+    min-width: 320px;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
+    padding-left: 20px;
+    margin: 40px 0 32px;
+    text-align: start;
   }
 
   .subscribe__description {
+    display: block;
+    width: 280px;
+    text-align: center;
     font-size: 16px;
   }
+}
+
+.subscribe__container {
+  min-width: 320px;
+  padding: 0 20px 40px;
 }

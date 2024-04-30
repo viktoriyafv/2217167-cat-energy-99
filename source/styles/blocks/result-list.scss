@@ -1,11 +1,13 @@
 .result-list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
 
   .result-list__item {
     width: 124px;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       width: 162px;
@@ -13,7 +15,7 @@
   }
 
   .result-list__title {
-    font-family: $secondary-font, sans-serif;
+    font-family: $secondary-font;
     font-size: 24px;
     line-height: 24px;
     color: #000000;
@@ -28,6 +30,7 @@
   .result-list__description {
     font-size: 12px;
     line-height: 12px;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       font-size: 14px;

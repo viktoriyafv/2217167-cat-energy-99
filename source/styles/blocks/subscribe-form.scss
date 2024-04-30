@@ -1,14 +1,23 @@
 .subscribe-form {
+  display: flex;
+  flex-direction: column;
+
   .subscribe-form__field {
-    font-family: "Oswald", sans-serif;
+    min-width: 280px;
+    font-family: $secondary-font;
     color: #444444;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
+    padding: 13px;
+    margin-bottom: 16px;
   }
 
   .subscribe-form__button {
+    min-width: 280px;
     font-size: 20px;
     line-height: 26px;
+    padding: 15px 26px;
+    border: none;
   }
 }

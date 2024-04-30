@@ -1,28 +1,28 @@
 .programs-list {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  min-width: 320px;
   padding: 20px;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    min-width: 1440px;
     flex-direction: row;
     justify-content: space-between;
     padding: 82px 110px 71px;
   }
 
   .programs-list__item {
-    width: 280px;
+    min-width: 280px;
     background-color: #f2f2f2;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      width: 708px;
+      min-width: 708px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 570px;
+      min-width: 570px;
     }
   }
 

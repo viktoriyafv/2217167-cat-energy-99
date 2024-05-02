@@ -5,28 +5,30 @@
 
     @media (min-width: $tablet-width) {
       min-width: 768px;
-      padding: 65px 30px 74px;
+      padding: 0 30px 74px;
     }
   }
 
   .catalog__title {
     display: block;
-    width: 320px;
+    min-width: 280px;
     font-family: $secondary-font;
     color: #000000;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
-    margin: 0;
-    padding: 26px 30px 41px;
+    margin: 0 auto;
+    padding: 26px 20px 41px;
     border-bottom: 1px solid #ebebeb;
 
     @media (min-width: $tablet-width) {
-      width: 500px;
+      min-width: 500px;
       padding: 0;
+      text-align: start;
       border: none;
       font-size: 60px;
       line-height: 60px;
+      margin-bottom: 84px;
     }
   }
 

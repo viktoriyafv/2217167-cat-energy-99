@@ -11,6 +11,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
+    width: 132px;
     padding: 0;
     border-bottom: none;
   }

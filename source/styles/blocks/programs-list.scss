@@ -3,7 +3,10 @@
   flex-direction: column;
   min-width: 320px;
   padding: 20px;
-  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 45px;
+  }
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
@@ -11,54 +14,54 @@
     justify-content: space-between;
     padding: 82px 110px 71px;
   }
+}
 
-  .programs-list__item {
-    min-width: 280px;
-    background-color: #f2f2f2;
-    background-repeat: no-repeat;
+.programs-list__item {
+  min-width: 280px;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
 
-    @media (min-width: $tablet-width) {
-      min-width: 708px;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-width: 570px;
-    }
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
   }
 
-  .programs-list__item--slim {
-    background-image: url("../../icons/stack.svg#cat-slim");
-    background-size: 50px 53px;
-    background-position: 20px 21px;
-    margin-bottom: 20px;
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      background-size: 200px 211px;
-      background-position: 455px 81px;
-      margin-bottom: 30px;
-    }
+.programs-list__item--slim {
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-size: 50px 53px;
+  background-position: left 20px top 21px;
+  margin-bottom: 20px;
 
-    @media (min-width: $desktop-width) {
-      background-size: 100px 106px;
-      background-position: 52px 41px;
-      margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    background-size: 200px 211px;
+    background-position: right 63px top 81px;
+    margin-bottom: 30px;
   }
 
-  .programs-list__item--pro {
-    background-image: url("../../icons/stack.svg#cat-pro");
-    background-size: 67px 50px;
-    background-position: 13px 24px;
+  @media (min-width: $desktop-width) {
+    background-size: 100px 106px;
+    background-position: 52px 41px;
+    margin: 0;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      background-image: url("../../icons/stack.svg#cat-pro-tablet");
-      background-size: 268px 200px;
-      background-position: 411px 91px;
-    }
+.programs-list__item--pro {
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-size: 67px 50px;
+  background-position: left 13px top 24px;
 
-    @media (min-width: $desktop-width) {
-      background-size: 134px 100px;
-      background-position: 52px 47px;
-    }
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#cat-pro-tablet");
+    background-size: 268px 200px;
+    background-position: right 29px top 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+    background-position: 52px 47px;
   }
 }

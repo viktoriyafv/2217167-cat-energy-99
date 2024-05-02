@@ -1,18 +1,21 @@
 .add-catalog {
-  .add-catalog__list {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    min-width: 280px;
-    display: flex;
-    flex-direction: column;
-  }
+  margin: 0 auto;
+  padding: 25px 20px 0;
+}
+
+.add-catalog__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .add-catalog__title {
   display: block;
   position: relative;
-  min-width: 320px;
+  min-width: 280px;
   font-family: $secondary-font;
   color: #000000;
   font-size: 24px;
@@ -28,10 +31,4 @@
     font-size: 40px;
     line-height: 40px;
   }
-}
-
-.add-catalog__container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 25px 20px 0;
 }

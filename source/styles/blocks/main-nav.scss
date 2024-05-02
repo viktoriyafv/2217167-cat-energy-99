@@ -1,16 +1,14 @@
-.main-nav {
-  .main-nav__list {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    text-align: center;
+.main-nav__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 
-    @media (min-width: $tablet-width) {
-      width: 436px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 436px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 475px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 475px;
   }
 }

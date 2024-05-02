@@ -9,16 +9,16 @@
     url("../../images/index-background-mobile@1x.jpg") type("image/png") 1x,
     url("../../images/index-background-mobile@2x.jpg") type("image/png") 2x);
   background-repeat: no-repeat;
-  background-size: cover, auto 302px;
+  background-size: cover, 320px 302px;
   background-position: 50% top;
   padding: 27px 20px 0;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
+    min-width: 708px;
     position: relative;
     background-image: none;
-    padding: 27px 0 579px 120px;
+    padding: 27px 0 579px 90px;
     margin-bottom: 0;
   }
 

@@ -26,9 +26,11 @@
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
-  }
+    font-size: 20px;
+    line-height: 30px;
 
-  &--catalog {
-    color: #111111;
+    &--catalog {
+      color: #111111;
+    }
   }
 }

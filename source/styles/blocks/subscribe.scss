@@ -1,28 +1,47 @@
 .subscribe {
   font-family: $secondary-font;
   color: #111111;
-  line-height: 24px;
+  min-width: 320px;
+  padding: 40px 20px;
 
-  .subscribe__title {
-    display: block;
-    min-width: 320px;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
-    padding-left: 20px;
-    margin: 40px 0 32px;
-    text-align: start;
-  }
-
-  .subscribe__description {
-    display: block;
-    width: 280px;
-    text-align: center;
-    font-size: 16px;
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding: 80px 28px;
   }
 }
 
-.subscribe__container {
-  min-width: 320px;
-  padding: 0 20px 40px;
+.subscribe__title {
+  display: block;
+  min-width: 192px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: start;
+  padding-right: 40px;
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 282px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 80px;
+    padding: 0 40px;
+  }
+}
+
+.subscribe__description {
+  display: block;
+  min-width: 280px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 0;
+    width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }

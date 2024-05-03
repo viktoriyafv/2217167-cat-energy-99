@@ -5,10 +5,10 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 436px;
+    min-width: 436px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 475px;
+    min-width: 475px;
   }
 }

@@ -1,6 +1,11 @@
 .add-catalog {
-  margin: 0 auto;
+  min-width: 320px;
   padding: 25px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding: 0 30px;
+  }
 }
 
 .add-catalog__list {
@@ -10,6 +15,12 @@
   min-width: 280px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    border: 1px solid #cdcdcd;
+    margin-bottom: 70px;
+  }
 }
 
 .add-catalog__title {

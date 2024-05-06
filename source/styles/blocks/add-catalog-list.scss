@@ -10,13 +10,23 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 161px;
+    margin-right: 164px;
+  }
 }
 
 .add-catalog-list__description {
   @include flex-between;
+  @include reset;
 
   @media (min-width: $tablet-width) {
     min-width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
   }
 }
 
@@ -54,8 +64,8 @@
     padding: 26px 38px 28px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 16px;
   }
 }
 
@@ -65,9 +75,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 285px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding: 10px 91px;
+    margin: 0;
+    min-width: 244px;
   }
 }

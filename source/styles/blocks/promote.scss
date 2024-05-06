@@ -5,8 +5,8 @@
     linear-gradient(to bottom, $bacground-accent-color, $bacground-accent-color),
     image-set(url("../../images/promote-background-mobile@1x.webp") type("image/webp") 1x,
     url("../../images/promote-background-mobile@2x.webp") type("image/webp") 2x,
-    url("../../images/promote-background-mobile@1x.jpg") type("image/png") 1x,
-    url("../../images/promote-background-mobile@2x.jpg") type("image/png") 2x);
+    url("../../images/promote-background-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../images/promote-background-mobile@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
   background-size: 78px 80px, cover, 280px 290px;
   background-position: 50% 59px, 100%, 50% 0;
@@ -16,17 +16,31 @@
   padding: 187px 61px 43px 58px;
 
   @media (min-width: $tablet-width) {
+    min-width: 707px;
     background-image:
       url("../../icons/stack.svg#icon-promote"),
       linear-gradient(to bottom, $bacground-accent-color, $bacground-accent-color),
       image-set(url("../../images/promote-background-tablet@1x.webp") type("image/webp") 1x,
       url("../../images/promote-background-tablet@2x.webp") type("image/webp") 2x,
-      url("../../images/promote-background-tablet@1x.jpg") type("image/png") 1x,
-      url("../../images/promote-background-tablet@2x.jpg") type("image/png") 2x);
+      url("../../images/promote-background-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/promote-background-tablet@2x.jpg") type("image/jpeg") 2x);
     background-size: 80px 83px, cover, 708px 200px;
     background-position: 77px 50%, 100%, 50% 0;
     padding: 71px 125px 58px 421px;
-    min-width: 707px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    background-image:
+      url("../../icons/stack.svg#icon-promote"),
+      linear-gradient(to bottom, $bacground-accent-color, $bacground-accent-color),
+      image-set(url("../../images/promote-background-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/promote-background-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/promote-background-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/promote-background-desktop@2x.jpg") type("image/jpeg") 2x);
+    background-size: 80px 83px, cover, 245px 288px;
+    background-position: 50% 56px, 100%, 50% 0;
+    padding: 185px 42px 43px;
   }
 }
 
@@ -41,5 +55,9 @@
     line-height: 20px;
     margin: 0;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

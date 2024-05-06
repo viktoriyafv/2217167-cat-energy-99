@@ -34,8 +34,10 @@
 
   @media (min-width: $tablet-width) {
     @include flex-between;
+    counter-reset: chapter 0;
   }
 }
+
 
 .specification__item {
   display: flex;
@@ -47,6 +49,7 @@
     line-height: 24px;
     padding-top: 40px;
     padding-bottom: 57px;
+    counter-increment: chapter;
 
     &--nutrition {
       width: 230px;
@@ -121,58 +124,22 @@
   }
 }
 
+.specification__item::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: counter(chapter);
+    right: 3px;
+    top: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $bacground-color;
+    z-index: -1;
+  }
+}
+
 .specification__item--nutrition::after {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "1";
-    top: 0;
     right: 23px;
-    font-family: $secondary-font;
-    font-size: 280px;
-    line-height: 280px;
-    color: $bacground-color;
-    z-index: -1;
-  }
-}
-
-.specification__item--powder::after {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "2";
-    top: 0;
-    right: 3px;
-    font-family: $secondary-font;
-    font-size: 280px;
-    line-height: 280px;
-    color: $bacground-color;
-    z-index: -1;
-  }
-}
-
-.specification__item--change::after {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "3";
-    top: 0;
-    right: 3px;
-    font-family: $secondary-font;
-    font-size: 280px;
-    line-height: 280px;
-    color: $bacground-color;
-    z-index: -1;
-  }
-}
-
-.specification__item--effect::after {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "4";
-    top: 0;
-    right: 3px;
-    font-family: $secondary-font;
-    font-size: 280px;
-    line-height: 280px;
-    color: $bacground-color;
-    z-index: -1;
   }
 }

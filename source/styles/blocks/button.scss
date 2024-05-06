@@ -7,4 +7,13 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $accent-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

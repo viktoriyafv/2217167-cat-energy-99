@@ -1,5 +1,28 @@
+.copyright:active {
+  opacity: 0.3;
+}
+
 .copyright__text {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+}
+
+.copyright__logotype {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 27px;
+  height: 34px;
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  mask-size: 27px 34px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#logo_html");
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background-color: $accent-color;
+  }
 }

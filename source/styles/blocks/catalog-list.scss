@@ -106,6 +106,17 @@
       width: 169px;
       padding: 10px 39px;
     }
+
+    &:hover,
+    &:focus-visible {
+      background-color: #ebebeb;
+      color: $primary-color;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: $primary-color;
+    }
   }
 }
 

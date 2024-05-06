@@ -16,26 +16,37 @@
   }
 }
 
-.social-list__item {
+.social-list__link {
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 28px;
   height: 28px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  mask-size: 28px 22px;
+  background-color: #666666;
 
   &--vk {
-    background-image: url("../../icons/stack.svg#vkontakte");
-    background-size: 28px 22px;
+    mask-image: url("../../icons/stack.svg#vkontakte");
     margin-right: 24px;
   }
 
   &--youtube {
-    background-image: url("../../icons/stack.svg#youtube");
-    background-size: 28px 22px;
+    mask-image: url("../../icons/stack.svg#youtube");
     margin-right: 24px;
   }
 
   &--telegram {
-    background-image: url("../../icons/stack.svg#telegram");
-    background-size: 28px 22px;
+    mask-image: url("../../icons/stack.svg#telegram");
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

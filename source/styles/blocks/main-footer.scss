@@ -29,6 +29,19 @@
   }
 }
 
+.main-footer__logo-text-image {
+  fill: #111111;
+
+  &:hover,
+  &:focus-visible {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
+}
+
 .main-footer__copyright {
   @include flex-between;
   text-decoration: none;

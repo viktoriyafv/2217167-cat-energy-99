@@ -7,8 +7,8 @@
       linear-gradient(to left, $bacground-accent-color 50%, #ffffff 50%),
       image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/index-background-mobile@1x.jpg") type("image/png") 1x,
-      url("../../images/index-background-mobile@2x.jpg") type("image/png") 2x);
+      url("../../images/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/index-background-mobile@2x.jpg") type("image/jpeg") 2x);
     background-repeat: no-repeat;
     background-size: cover, 720px 694px;
     background-position: 0 50%, top right;
@@ -71,6 +71,15 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

@@ -6,8 +6,8 @@
     linear-gradient(to bottom, $bacground-accent-color 302px, #ffffff 302px),
     image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
     url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
-    url("../../images/index-background-mobile@1x.jpg") type("image/png") 1x,
-    url("../../images/index-background-mobile@2x.jpg") type("image/png") 2x);
+    url("../../images/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../images/index-background-mobile@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
   background-size: cover, 320px 302px;
   background-position: 50% top;

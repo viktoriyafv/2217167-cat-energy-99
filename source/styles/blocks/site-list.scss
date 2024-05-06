@@ -1,9 +1,6 @@
 .site-list {
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flex-between;
   }
 }
 
@@ -19,7 +16,7 @@
 
 .site-list__link {
   font-family: $secondary-font;
-  color: #000000;
+  color: $basic-color;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;

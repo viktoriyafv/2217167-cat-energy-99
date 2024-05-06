@@ -1,12 +1,9 @@
 .content__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .content__list-item {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
   font-size: 12px;
   line-height: 16px;
 
@@ -53,6 +50,11 @@
     width: 250px;
     text-align: center;
     padding: 22px 55px 0 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 169px;
+    padding: 0 15px;
   }
 
   &--products {

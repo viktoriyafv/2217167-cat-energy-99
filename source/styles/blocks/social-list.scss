@@ -1,17 +1,16 @@
 .social-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
+  min-width: 280px;
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
+  justify-content: center;
   padding-top: 20px;
   padding-bottom: 19px;
   border-bottom: 1px solid #d9d9d9;
-  justify-content: center;
+
 
   @media (min-width: $tablet-width) {
-    width: 132px;
+    min-width: 132px;
     padding: 0;
     border-bottom: none;
   }

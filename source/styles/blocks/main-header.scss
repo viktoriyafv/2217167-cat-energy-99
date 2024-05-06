@@ -4,7 +4,7 @@
   @media (min-width: $desktop-width) {
     min-width: 1440px;
     background-image:
-      linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%),
+      linear-gradient(to left, $bacground-accent-color 50%, #ffffff 50%),
       image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/index-background-mobile@1x.jpg") type("image/png") 1x,
@@ -18,9 +18,7 @@
     background-image: none;
 
     @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-between;
       padding: 25px 33px 65px 30px;
     }
 
@@ -37,10 +35,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    @include flex-between;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     min-width: 768px;
     padding: 25px 30px 0;
   }
@@ -52,10 +48,7 @@
 }
 
 .main-header__navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include flex-between;
   padding: 13px 20px 15px;
   border-bottom: 1px solid #e6e6e6;
 

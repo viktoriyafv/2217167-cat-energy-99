@@ -1,5 +1,5 @@
 .main-content {
+  @include reset;
   display: flex;
   flex-direction: column;
-  margin: 0;
 }

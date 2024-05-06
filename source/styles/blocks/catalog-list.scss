@@ -3,21 +3,20 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    @include flex-between;
+    flex-direction: row;
+    row-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
   }
 }
 
 .catalog-list__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-between;
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
@@ -38,17 +37,22 @@
 
 
   @media (min-width: $tablet-width) {
+    min-width: 0;
     width: 324px;
     border: none;
-    background-image: linear-gradient(to top, #f2f2f2 84%, #ffffff 20%);
+    background-image: linear-gradient(to top, $bacground-color 430px, #ffffff 430px);
     padding: 10px 37px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 
   &--products {
     @media (min-width: $tablet-width) {
       background-image: none;
       height: 429px;
-      border: 2px solid #f2f2f2;
+      border: 2px solid $bacground-color;
       margin-top: 82px;
       padding: 50px 37px 40px;
     }
@@ -61,6 +65,11 @@
 
   @media (min-width: $tablet-width) {
     width: 200px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
@@ -74,17 +83,28 @@
     padding: 10px 95px 10px 94px;
   }
 
+  @media (min-width: $desktop-width) {
+    min-width: 0;
+    width: 169px;
+    padding: 10px 53px 10px 54px;
+  }
+
   &--products {
     width: 280px;
-    background-color: #f2f2f2;
+    background-color: $bacground-color;
     border: none;
-    color: #444444;
+    color: $primary-color;
     padding: 10px 94px;
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
       width: 250px;
       padding: 10px 80px 10px 79px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 169px;
+      padding: 10px 39px;
     }
   }
 }
@@ -96,7 +116,11 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    min-width: none;
+    min-width: 0;
     width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }

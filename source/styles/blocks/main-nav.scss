@@ -1,7 +1,5 @@
 .main-nav__list {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
   text-align: center;
 
   @media (min-width: $tablet-width) {

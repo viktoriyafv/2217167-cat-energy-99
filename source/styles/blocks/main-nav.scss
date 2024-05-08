@@ -1,12 +1,15 @@
 .main-nav__list {
   @include reset-list;
+  width: 100%;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    min-width: 436px;
+    width: max-content;
+    gap: 33px;
+    max-width: 436px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 475px;
+    max-width: 600px;
   }
 }

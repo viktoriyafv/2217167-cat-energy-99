@@ -17,6 +17,7 @@
   line-height: 37px;
   color: $basic-color;
   text-transform: uppercase;
+  word-break: break-all;
   padding-left: 90px;
   margin-bottom: 29px;
 
@@ -70,12 +71,15 @@
     width: 165px;
     font-size: 20px;
     line-height: 30px;
-    padding-right: 57px;
   }
 
   &:hover,
   &:focus-visible {
     outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -93,4 +97,9 @@
   @media (min-width: $tablet-width) {
     top: 14px;
   }
+}
+
+.program__link:hover::after,
+.program__link:focus-visible::after {
+  mask-image: url("../../icons/stack.svg#icon-arrow");
 }

@@ -51,6 +51,9 @@
   @include flex-between;
   padding: 13px 20px 15px;
   border-bottom: 1px solid #e6e6e6;
+  position: relative;
+  width: auto;
+  min-height: 24px;
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -76,6 +79,7 @@
   &:hover,
   &:focus-visible {
     opacity: 0.8;
+    outline: none;
   }
 
   &:active {
@@ -84,25 +88,67 @@
 }
 
 .main-header__toggle {
+  position: absolute;
+  top: 20px;
+  right: 21px;
+  z-index: 2;
   display: block;
   width: 24px;
   height: 24px;
   background-color: transparent;
-  background-image: url("../../icons/stack.svg#menu-open");
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
+  cursor: pointer;
   border: none;
+  padding: 0;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $accent-color;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
 
-  &--close {
-    width: 18px;
-    height: 18px;
-    background-image: url("../../icons/stack.svg#menu-close");
-    background-position: 50% 50%;
-    background-size: 18px 18px;
-    padding: 0;
+.main-header__navigation--closed .main-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 24px;
+  background-color: $basic-color;
+  mask-image: url("../../icons/stack.svg#menu-closed");
+  mask-repeat: no-repeat;
+  mask-position: 0 50%;
+  mask-size: 24px 24px;
+  border: none;
+}
+
+.main-header__navigation--closed .main-header__toggle:active::before {
+  background-color: #ffffff;
+}
+
+.main-header__navigation--opened .main-header__toggle {
+  top: 20px;
+  right: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    mask-image: url("../../icons/stack.svg#menu-opened");
+    mask-size: 18px 18px;
+    mask-repeat: no-repeat;
+    mask-position: 50% 50%;
+    background-color: $basic-color;
   }
 }

@@ -22,6 +22,17 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  position: relative;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -32,9 +43,27 @@
     color: #ffffff;
     font-size: 20px;
     line-height: 30px;
+  }
 
-    &--catalog {
-      color: #111111;
+  &--active::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $accent-color;
+      margin-top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      color: $basic-color;
     }
   }
 }

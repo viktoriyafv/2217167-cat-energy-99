@@ -8,16 +8,15 @@
     width: 632px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+  }
 }
 
 .subscribe-form__label {
   display: block;
-  width: 280px;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 376px;
-  }
 }
 
 .subscribe-form__field {
@@ -33,6 +32,10 @@
   @media (min-width: $tablet-width) {
     min-width: 376px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 496px;
   }
 }
 

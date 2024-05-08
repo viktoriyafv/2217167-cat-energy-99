@@ -1,12 +1,12 @@
 .example {
-  background-color: #eaeaea;
+  background-color: $bacground-color;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
+    background-image: linear-gradient(to top, $bacground-color 462px, #ffffff 462px);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
+    background-image: linear-gradient(to top, $bacground-color 462px, #ffffff 462px);
     position: relative;
   }
 }

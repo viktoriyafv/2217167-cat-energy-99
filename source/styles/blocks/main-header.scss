@@ -5,10 +5,10 @@
     min-width: 1440px;
     background-image:
       linear-gradient(to left, $bacground-accent-color 50%, #ffffff 50%),
-      image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
-      url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
-      url("../../images/index-background-mobile@2x.jpg") type("image/jpeg") 2x);
+      image-set(url("../../images/index-background-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/index-background-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/index-background-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/index-background-desktop@2x.jpg") type("image/jpeg") 2x);
     background-repeat: no-repeat;
     background-size: cover, 720px 694px;
     background-position: 0 50%, top right;
@@ -19,11 +19,10 @@
 
     @media (min-width: $tablet-width) {
       @include flex-between;
-      padding: 25px 33px 65px 30px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 71px 110px 77px;
+      padding: 0;
     }
   }
 }
@@ -38,7 +37,7 @@
     @include flex-between;
     flex-direction: row;
     min-width: 768px;
-    padding: 25px 30px 0;
+    padding: 25px 30px 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +46,7 @@
   }
 }
 
-.main-header__navigation {
+.main-header__top {
   @include flex-between;
   padding: 13px 20px 15px;
   border-bottom: 1px solid #e6e6e6;
@@ -102,8 +101,8 @@
 
   &:hover,
   &:focus-visible {
-    background-color: $accent-color;
     outline: none;
+    opacity: 0.6;
   }
 
   &:active {
@@ -115,7 +114,7 @@
   }
 }
 
-.main-header__navigation--closed .main-header__toggle::before {
+.main-header__container--closed .main-header__toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -130,32 +129,34 @@
   border: none;
 }
 
-.main-header__navigation--closed .main-header__toggle:hover::before,
-.main-header__navigation--closed .main-header__toggle:focus-visible::before {
+.main-header__container--closed .main-header__toggle:hover::before,
+.main-header__container--closed .main-header__toggle:focus-visible::before {
   background-color: $primary-color;
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-header__navigation--closed .main-header__nav {
+  .main-header__container--closed .main-header__nav {
     display: none;
   }
 
-  .main-header__navigation--opened .main-header__nav {
+  .main-header__container--opened .main-header__nav {
     position: absolute;
-    top: 66px;
+    top: 67px;
     left: 0;
     z-index: 10;
     min-height: 200px;
-    min-width: 100%;
+    min-width: 320px;
     background-color: #ffffff;
   }
 
-  .main-nav--nojs {
+  .main-header__container--nojs .main-header__nav {
     display: block;
+    position: static;
+    min-height: 0;
   }
 }
 
-.main-header__navigation--opened .main-header__toggle {
+.main-header__container--opened .main-header__toggle {
   top: 20px;
   right: 21px;
 

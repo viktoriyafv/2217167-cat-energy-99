@@ -26,7 +26,7 @@
     min-width: 1440px;
     position: relative;
     background-image: none;
-    padding: 0 0 184px 190px;
+    padding: 110px 0 184px 190px;
   }
 }
 
@@ -46,14 +46,11 @@
     text-align: start;
     margin-bottom: 40px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 110px;
-  }
 }
 
 .promo__slogan {
   display: block;
+  margin: 0;
   min-width: 280px;
   font-size: 14px;
   line-height: 14px;

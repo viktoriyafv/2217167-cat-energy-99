@@ -1,7 +1,5 @@
 .products {
   display: block;
-  min-width: 280px;
-  margin-bottom: 8px;
   text-align: center;
   background-image: url("../../icons/stack.svg#plus");
   background-repeat: no-repeat;
@@ -9,9 +7,12 @@
   background-size: 30px 30px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
     background-position: center 50px;
     background-size: 60px 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: 50px 37px 40px;
   }
 }
 
@@ -34,6 +35,11 @@
     padding: 110px 45px 0;
     margin-bottom: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 18px 0;
+    margin-bottom: 26px;
+  }
 }
 
 .products__description {
@@ -48,5 +54,10 @@
     line-height: 18px;
     margin-bottom: 82px;
     padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+    padding: 0;
   }
 }

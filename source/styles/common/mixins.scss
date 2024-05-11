@@ -19,6 +19,12 @@
   list-style: none;
 }
 
+@mixin flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 @mixin flex-between {
   display: flex;
   justify-content: space-between;

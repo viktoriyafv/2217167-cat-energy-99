@@ -1,5 +1,6 @@
 .add-catalog {
-  padding: 25px 20px 0;
+  @include reset;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -10,7 +11,21 @@
   }
 }
 
+.add-catalog::before {
+  content: "";
+  position: absolute;
+  top: 16;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $accent-color;
+  z-index: -1;
+}
+
 .add-catalog__container {
+  padding: 0 20px;
+
+
   @media (min-width: $desktop-width) {
     @include flex-between;
   }
@@ -21,15 +36,18 @@
   min-width: 280px;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
+    width: 708px;
+    margin: 0 auto;
     border: 1px solid #cdcdcd;
     margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 896px;
+    width: 100%;
     border-left: none;
     border-right: none;
     margin: 0;
@@ -38,24 +56,25 @@
 
 .add-catalog__title {
   @include title;
-  position: relative;
+  width: 286px;
+  background-color: #ffffff;
   min-width: 280px;
   font-family: $secondary-font;
   color: $basic-color;
   font-size: 24px;
   line-height: 24px;
-  padding-bottom: 36px;
-  border-bottom: 1px solid #cdcdcd;
+  padding: 0 40px 36px 20px;
 
   @media (min-width: $tablet-width) {
+    width: 381px;
     font-size: 32px;
     line-height: 32px;
-    padding: 0;
-    border: 0;
+    padding: 0 40px;
     margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 456px;
     font-size: 40px;
     line-height: 40px;
   }

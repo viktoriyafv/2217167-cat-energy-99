@@ -5,10 +5,12 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +22,7 @@
 .add-catalog-list__description {
   @include flex-between;
   @include reset;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     min-width: 223px;

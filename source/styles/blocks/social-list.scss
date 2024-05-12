@@ -1,6 +1,7 @@
 .social-list {
   @include reset-list;
   min-width: 280px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -10,7 +11,8 @@
 
 
   @media (min-width: $tablet-width) {
-    min-width: 132px;
+    min-width: 0;
+    width: 132px;
     padding: 0;
     border-bottom: none;
   }

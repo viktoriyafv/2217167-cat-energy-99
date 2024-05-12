@@ -28,6 +28,7 @@
   text-transform: uppercase;
   padding: 13px;
   margin-bottom: 16px;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     min-width: 376px;
@@ -36,6 +37,13 @@
 
   @media (min-width: $desktop-width) {
     min-width: 496px;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background-color: $bacground-color;
+    outline: none;
   }
 }
 

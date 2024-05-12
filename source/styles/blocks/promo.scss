@@ -3,13 +3,13 @@
   min-width: 320px;
   color: #ffffff;
   background-image:
-    linear-gradient(to bottom, $bacground-accent-color 302px, #ffffff 302px),
     image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
     url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
     url("../../images/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
-    url("../../images/index-background-mobile@2x.jpg") type("image/jpeg") 2x);
+    url("../../images/index-background-mobile@2x.jpg") type("image/jpeg") 2x),
+    linear-gradient(90deg, #64a73b 50%, #61a53a 50%);
   background-repeat: no-repeat;
-  background-size: cover, 320px 302px;
+  background-size: 320px 302px, 100% 302px;
   background-position: 50% top;
   padding: 27px 20px 0;
   margin: 0 auto;

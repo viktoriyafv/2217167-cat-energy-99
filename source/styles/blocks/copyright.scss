@@ -1,7 +1,3 @@
-.copyright:active {
-  opacity: 0.3;
-}
-
 .copyright__text {
   font-size: 16px;
   line-height: 20px;
@@ -19,10 +15,12 @@
   mask-size: 27px 34px;
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#logo_html");
+}
 
-  &:hover,
-  &:focus-visible,
-  &:active {
-    background-color: $accent-color;
-  }
+.copyright:hover .copyright__logotype {
+  background-color: $accent-color;
+}
+
+.copyright:active {
+  opacity: 0.3;
 }

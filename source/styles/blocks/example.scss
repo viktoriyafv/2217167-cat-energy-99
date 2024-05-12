@@ -1,13 +1,16 @@
 .example {
   background-color: $bacground-color;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to top, $bacground-color 462px, #ffffff 462px);
+    padding-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to top, $bacground-color 462px, #ffffff 462px);
     position: relative;
+    padding: 0;
   }
 }
 
@@ -120,6 +123,6 @@
   }
 }
 
-.example__compare {
+.example__slider {
   margin: 0 auto;
 }

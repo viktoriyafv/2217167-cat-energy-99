@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
-    padding: 80px 30px;
+    padding: 74px 30px 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,12 +18,20 @@
 .subscribe::before {
   content: "";
   position: absolute;
-  top: 112;
+  top: 52;
   left: 0;
   width: 100%;
   height: 2px;
   background-color: $accent-color;
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 116px;
+  }
 }
 
 .subscribe__title {

@@ -14,16 +14,28 @@
 .add-catalog::before {
   content: "";
   position: absolute;
-  top: 16;
+  top: 12;
   left: 0;
   width: 100%;
   height: 2px;
   background-color: $accent-color;
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 16;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+  }
 }
 
 .add-catalog__container {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
 
   @media (min-width: $desktop-width) {
@@ -46,8 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 896px;
-    width: 100%;
+    width: 896;
     border-left: none;
     border-right: none;
     margin: 0;

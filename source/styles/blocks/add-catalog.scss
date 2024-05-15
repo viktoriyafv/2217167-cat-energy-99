@@ -22,6 +22,8 @@
   @media (min-width: $desktop-width) {
     @include flex-between;
     padding: 0 110px 0 109px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -42,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 896;
+    width: 896px;
     border-left: none;
     border-right: none;
     margin: 0;
@@ -87,7 +89,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 381px;
     font-size: 32px;
     line-height: 32px;
     padding: 0 40px;
@@ -95,7 +96,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 456px;
     font-size: 40px;
     line-height: 40px;
     margin-left: 70px;

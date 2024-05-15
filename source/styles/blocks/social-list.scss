@@ -1,16 +1,16 @@
 .social-list {
   @include reset-list;
-  min-width: 280px;
-  width: 100%;
+  width: 280px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 24px;
   padding: 19px 0;
   border-bottom: 1px solid #d9d9d9;
 
 
   @media (min-width: $tablet-width) {
-    min-width: 0;
+    min-width: auto;
     width: 132px;
     padding: 0;
     border-bottom: none;
@@ -35,12 +35,10 @@
 
   &--vk {
     mask-image: url("../../icons/stack.svg#vkontakte");
-    margin-right: 24px;
   }
 
   &--youtube {
     mask-image: url("../../icons/stack.svg#youtube");
-    margin-right: 24px;
   }
 
   &--telegram {

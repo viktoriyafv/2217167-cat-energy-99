@@ -1,5 +1,4 @@
 .catalog {
-  margin: 0 auto;
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
@@ -12,32 +11,41 @@
 }
 
 .catalog__title {
-  display: block;
-  min-width: 280px;
+  @include title;
   font-family: $secondary-font;
   color: $basic-color;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
-  margin: 0 auto;
   padding: 26px 20px 41px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
-    min-width: 500px;
-    padding: 0;
+    width: 708px;
     text-align: start;
     border: none;
     font-size: 60px;
     line-height: 60px;
+    margin: 0 auto;
     margin-bottom: 84px;
+    padding: 0;
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
   }
 }
 
 .catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 

@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    margin-bottom: 27px;
+    margin-bottom: 23px;
   }
 }
 
@@ -31,13 +31,11 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  min-width: 320px;
   padding: 20px 20px 24px;
   border-bottom: 1px solid #ebebeb;
 
 
   @media (min-width: $tablet-width) {
-    min-width: 0;
     width: 324px;
     border: none;
     background-image: linear-gradient(to top, $bacground-color 430px, #ffffff 430px);
@@ -61,11 +59,12 @@
 
 .catalog-list__link {
   display: block;
-  min-width: 140px;
+  height: 107px;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     margin-bottom: 22px;
+    height: 210px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,7 +126,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    min-width: 0;
+    min-width: auto;
     width: 250px;
   }
 

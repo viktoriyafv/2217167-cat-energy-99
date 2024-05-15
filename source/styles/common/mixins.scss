@@ -38,3 +38,12 @@
   font-weight: 400;
   margin: 0;
 }
+
+@mixin title-line {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 2px;
+  background-color: $accent-color;
+  z-index: -1;
+}

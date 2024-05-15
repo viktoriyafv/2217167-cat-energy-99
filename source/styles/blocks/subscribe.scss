@@ -1,12 +1,11 @@
 .subscribe {
   min-width: 320px;
-  position: relative;
   padding-top: 40px;
 
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
-    padding: 74px 30px 80px;
+    padding: 80px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,48 +14,53 @@
   }
 }
 
-.subscribe::before {
-  content: "";
-  position: absolute;
-  top: 52;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: $accent-color;
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    top: 90px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 116px;
-  }
-}
-
 .subscribe__title {
   @include title;
-  width: 212px;
+  width: fit-content;
   font-family: $secondary-font;
   color: $basic-color;
   background-color: #ffffff;
-  min-width: 192px;
   font-size: 24px;
   line-height: 24px;
   text-align: start;
   padding: 0 40px 0 20px;
   margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    @include title-line;
+    top: 9px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 16;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      @include title-line;
+      top: 16;
+      right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    width: 282px;
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 80px;
+    margin-bottom: 66px;
     padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 333px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -74,9 +78,9 @@
   display: block;
   font-family: $secondary-font;
   color: $basic-color;
-  min-width: 280px;
   text-align: center;
   font-size: 16px;
+  line-height: 24px;
   margin: 0;
   margin-bottom: 24px;
 

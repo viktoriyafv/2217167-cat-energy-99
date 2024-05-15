@@ -17,22 +17,21 @@
 }
 
 .products__title {
+  @include title;
+  display: block;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #111111;
-  font-weight: 400;
-  display: block;
-  min-width: 280px;
-  margin: 0;
-  padding-top: 53px;
+  padding-top: 60px;
   margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     min-width: 170px;
-    padding: 110px 45px 0;
+    padding: 106px 45px 0;
     margin-bottom: 23px;
   }
 

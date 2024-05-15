@@ -1,12 +1,14 @@
 .main-footer {
-  @include flex-between;
-  flex-direction: column;
+  @include flex;
   background-color: $bacground-color;
+  line-height: 5px;
+  flex-direction: column;
   padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     padding: 55px 30px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,46 +16,48 @@
   }
 }
 
-.main-footer__logo-text {
+.main-footer__logo-link {
   display: block;
-  min-width: 280px;
   width: 100%;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 19px;
+  color: $basic-color;
 
 
   @media (min-width: $tablet-width) {
-    min-width: 0;
     width: 128px;
     border-bottom: none;
-    padding: 0;
+    padding: 7px 0 5px;
+    margin-right: 160px;
   }
-}
 
-.main-footer__logo-text-image {
-  fill: #111111;
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
 
   &:hover,
   &:focus-visible {
-    fill: #3e3e3e;
+    color: #3e3e3e;
   }
 
   &:active {
-    fill: #6b6b6b;
+    color: #6b6b6b;
   }
+}
+
+.main-footer__logo-text {
+  fill: currentColor;
 }
 
 .main-footer__copyright {
   @include flex-between;
   text-decoration: none;
   color: $primary-color;
-  min-width: 280px;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
-    min-width: 0;
     width: 168px;
     padding: 0;
   }

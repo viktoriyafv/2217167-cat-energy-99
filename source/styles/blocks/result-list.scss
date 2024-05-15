@@ -1,5 +1,9 @@
 .result-list {
   @include flex-between;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 168px;
+  }
 }
 
 .result-list__item {
@@ -12,6 +16,7 @@
   @media (min-width: $tablet-width) {
     min-width: 162px;
     margin: 0;
+    padding-bottom: 5px;
   }
 }
 
@@ -29,7 +34,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 14px 30px 24px;
+    padding: 14px 30px 19px;
   }
 }
 
@@ -53,6 +58,7 @@
     line-height: 14px;
     padding: 0;
     background-color: #ffffff;
+    top: 63px;
   }
 
   @media (min-width: $desktop-width) {

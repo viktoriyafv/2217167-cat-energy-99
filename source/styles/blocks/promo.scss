@@ -1,4 +1,4 @@
-.promo__container {
+.promo {
   font-family: $secondary-font;
   min-width: 320px;
   color: #ffffff;
@@ -11,12 +11,24 @@
   background-repeat: no-repeat;
   background-size: 320px 302px, 100% 302px;
   background-position: 50% top;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.promo__container {
   padding: 27px 20px 0;
+  width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    background-image: none;
+    width: 768px;
     padding: 65px 30px 579px 120px;
   }
 
@@ -25,6 +37,7 @@
     padding: 110px 110px 184px 190px;
     margin: 0 auto;
     width: 1440px;
+    position: relative;
   }
 }
 

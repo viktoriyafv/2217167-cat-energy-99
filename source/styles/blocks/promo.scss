@@ -48,12 +48,6 @@
   text-align: center;
   margin-bottom: 25px;
 
-  @media (max-width: $mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 420px;
     font-size: 60px;

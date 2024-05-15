@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +23,7 @@
   @include flex-between;
   @include reset;
   margin-bottom: 15px;
+  line-height: 14px;
 
   @media (min-width: $tablet-width) {
     min-width: 223px;
@@ -34,8 +35,6 @@
 }
 
 .add-catalog-list__key {
-  line-height: 20px;
-
   @media (min-width: $tablet-width) {
     display: block;
     min-width: 132px;
@@ -52,6 +51,7 @@
     min-width: 42px;
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
   }
 }
 

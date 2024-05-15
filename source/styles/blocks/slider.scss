@@ -33,18 +33,18 @@
   }
 }
 
-.slider__curtain {
-  z-index: 1;
-  display: grid;
+.slider__thumb {
+  @include reset;
   place-items: center;
-  margin: 0 -2px;
   width: 4px;
   height: 100%;
   border-radius: 2px;
   color: #666666;
-  background-color: currentColor;
+  border: 2px solid currentColor;
+  background-color: #666666;
   cursor: col-resize;
   transition: color 0.2s, opacity 0.2s;
+  position: relative;
 
   &:hover,
   &:focus {
@@ -54,28 +54,40 @@
   &:active {
     color: #5eaa2f;
   }
-}
-
-.slider__thumb {
-  display: grid;
-  margin: -18px;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  color: currentColor;
-  background-color: #ffffff;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  cursor: col-resize;
 
   &::before {
     content: "";
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 108px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      top: 236px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 119px;
+    right: -12px;
+    width: 24px;
+    height: 18px;
     background-color: currentColor;
     mask-image: url("../../icons/stack.svg#thumb");
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
     mask-size: 24px 18px;
+    z-index: 3;
+
+    @media (min-width: $tablet-width) {
+      top: 247px;
+    }
   }
 }

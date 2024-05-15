@@ -18,7 +18,7 @@
 
 .main-footer__logo-link {
   display: block;
-  width: 100%;
+  min-width: 280px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 19px;
@@ -26,6 +26,7 @@
 
 
   @media (min-width: $tablet-width) {
+    min-width: auto;
     width: 128px;
     border-bottom: none;
     padding: 7px 0 5px;
@@ -54,7 +55,7 @@
   @include flex-between;
   text-decoration: none;
   color: $primary-color;
-  width: 100%;
+  width: 280px;
   padding-top: 21px;
 
   @media (min-width: $tablet-width) {

@@ -30,7 +30,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 245px;
+    min-width: auto;
+    width: 245px;
     background-image:
       url("../../icons/stack.svg#icon-promote"),
       linear-gradient(to bottom, $bacground-accent-color, $bacground-accent-color),
@@ -53,7 +54,6 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin: 0;
     text-align: start;
   }
 

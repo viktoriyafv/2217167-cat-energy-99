@@ -33,13 +33,11 @@
   @include title;
   font-family: $secondary-font;
   color: $basic-color;
-  min-width: 280px;
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -54,19 +52,16 @@
 
 .example__text {
   display: block;
-  min-width: 280px;
   margin: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 0;
     width: 436px;
     margin-bottom: 69px;
   }
@@ -74,7 +69,7 @@
 
 .example__list-container {
   @media (min-width: $tablet-width) {
-    @include flex;
+    @include flex-between;
   }
 
   @media (min-width: $desktop-width) {

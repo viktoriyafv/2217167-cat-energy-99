@@ -1,6 +1,6 @@
 .subscribe {
   min-width: 320px;
-  padding-top: 40px;
+  padding: 40px 20px;
 
 
   @media (min-width: $tablet-width) {
@@ -10,67 +10,15 @@
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
-    padding: 96px 70px 104px;
+    padding: 96px 110px 104px;
   }
 }
 
 .subscribe__title {
-  @include title;
-  width: fit-content;
-  font-family: $secondary-font;
-  color: $basic-color;
-  background-color: #ffffff;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: start;
-  padding: 0 40px 0 20px;
   margin-bottom: 32px;
-  position: relative;
-
-  &::before {
-    @include title-line;
-    top: 9px;
-    left: 0;
-
-    @media (min-width: $tablet-width) {
-      top: 16;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 20px;
-    }
-  }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      @include title-line;
-      top: 16;
-      right: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 20px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
-    font-size: 32px;
-    line-height: 32px;
     margin-bottom: 66px;
-    padding: 0 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-
-.subscribe__container {
-  padding: 0 20px 40px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
   }
 }
 
@@ -85,7 +33,6 @@
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    min-width: 0;
     width: 632px;
     font-size: 24px;
     line-height: 32px;

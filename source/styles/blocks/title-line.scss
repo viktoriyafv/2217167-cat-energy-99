@@ -1,0 +1,53 @@
+.title-line {
+  @include title;
+  width: fit-content;
+  background: #ffffff;
+  font-family: $secondary-font;
+  color: $basic-color;
+  font-size: 24px;
+  line-height: 24px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+  position: relative;
+
+  &::after {
+    @include title-line;
+    width: calc(100vw - 20px);
+
+    @media (min-width: $tablet-width) {
+      top: 16;
+      width: calc(100vw - 30px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: calc(100vw - 110px);
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      @include title-line;
+      width: 30px;
+      top: 16;
+      left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 17;
+      width: 70px;
+      left: -110px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0 40px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

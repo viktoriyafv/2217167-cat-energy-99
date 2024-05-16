@@ -1,29 +1,14 @@
 .add-catalog {
   @include reset;
   position: relative;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-  }
-}
-
-.add-catalog__container {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-
-
-  @media (min-width: $desktop-width) {
-    @include flex-between;
-    padding: 0 110px 0 109px;
-    width: 1440px;
-    margin: 0 auto;
+    padding: 0 110px;
   }
 }
 
@@ -32,13 +17,13 @@
   min-width: 280px;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $color-border;
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $color-border;
     margin-bottom: 70px;
     padding: 0;
   }
@@ -52,52 +37,17 @@
 }
 
 .add-catalog__title {
-  @include title;
-  width: fit-content;
-  background: #ffffff;
-  font-family: $secondary-font;
-  color: $basic-color;
-  font-size: 24px;
-  line-height: 24px;
-  padding: 0 40px 34px 20px;
-  position: relative;
-
-  &::before {
-    @include title-line;
-    top: 9px;
-    left: 0;
-
-    @media (min-width: $tablet-width) {
-      top: 16;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 17;
-    }
-  }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      @include title-line;
-      top: 16;
-      right: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 17;
-    }
-  }
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    font-size: 32px;
-    line-height: 32px;
-    padding: 0 40px;
     margin-bottom: 80px;
   }
+}
 
+.add-catalog__container {
   @media (min-width: $desktop-width) {
-    font-size: 40px;
-    line-height: 40px;
-    margin-left: 70px;
+    @include flex-between;
+    width: 1220px;
+    margin: 0 auto;
   }
 }

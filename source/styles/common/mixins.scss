@@ -42,7 +42,8 @@
 @mixin title-line {
   content: "";
   position: absolute;
-  width: 100vw;
+  top: 9px;
+  left: 0;
   height: 2px;
   background-color: $accent-color;
   z-index: -1;

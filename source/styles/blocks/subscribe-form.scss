@@ -28,7 +28,7 @@
   text-transform: uppercase;
   padding: 12px;
   margin-bottom: 16px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-width: 376px;
@@ -39,11 +39,17 @@
     min-width: 496px;
   }
 
-  &:hover,
-  &:focus-visible,
-  &:active {
-    background-color: $bacground-color;
+  &:hover {
+    border: 1px solid #cdcdcd;
     outline: none;
+  }
+
+  &:focus-visible {
+    border: 1px solid $primary-color;
+  }
+
+  &--error {
+    border: 1px solid #ff8282;
   }
 }
 

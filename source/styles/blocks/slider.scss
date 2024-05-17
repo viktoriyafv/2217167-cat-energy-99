@@ -52,12 +52,14 @@
   position: relative;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: $accent-color;
+    background-color: $accent-color;
   }
 
   &:active {
     color: #5eaa2f;
+    background-color: #5eaa2f;
   }
 
   &::before {

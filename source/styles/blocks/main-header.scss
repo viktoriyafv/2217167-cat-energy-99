@@ -31,7 +31,7 @@
 }
 
 .main-header__container {
-  padding: 13px 20px 15px;
+  padding: 13px 20px 14px;
   width: 320px;
   position: relative;
   min-height: 24px;
@@ -59,9 +59,16 @@
 
 .main-header__logo {
   text-decoration: none;
+  display: block;
+  height: 38px;
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
   }
 
   &:hover,

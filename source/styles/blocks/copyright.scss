@@ -21,7 +21,8 @@
   mask-image: url("../../icons/stack.svg#logo_html");
 }
 
-.copyright:hover .copyright__logotype {
+.copyright:hover .copyright__logotype,
+.copyright:focus.copyright__logotype {
   background-color: $accent-color;
 }
 

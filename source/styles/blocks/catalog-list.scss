@@ -75,6 +75,10 @@
     width: 169px;
     margin-bottom: 12px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-list__button {
@@ -112,12 +116,12 @@
 
     &:hover,
     &:focus-visible {
-      background-color: #ebebeb;
+      background-color: $color-border;
       color: $primary-color;
     }
 
     &:active {
-      background-color: #ebebeb;
+      background-color: $color-border;
       color: $primary-color;
     }
   }

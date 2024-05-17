@@ -16,7 +16,9 @@
   padding: 187px 61px 43px 58px;
 
   @media (min-width: $tablet-width) {
-    min-width: 707px;
+    min-width: auto;
+    width: 708px;
+    margin: 0 auto;
     background-image:
       url("../../icons/stack.svg#icon-promote"),
       linear-gradient(to bottom, $bacground-accent-color, $bacground-accent-color),
@@ -30,8 +32,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: auto;
     width: 245px;
+    margin: 0;
     background-image:
       url("../../icons/stack.svg#icon-promote"),
       linear-gradient(to bottom, $bacground-accent-color, $bacground-accent-color),
@@ -47,7 +49,7 @@
 
 .promote__description {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   width: 161px;
   text-align: center;
 

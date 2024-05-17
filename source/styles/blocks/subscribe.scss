@@ -15,10 +15,8 @@
 }
 
 .subscribe__title {
-  margin-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
   }
 }
 

@@ -24,8 +24,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: auto;
-    width: 565px;
+    min-width: 565px;
+    height: 199px;
     position: absolute;
     background-color: #ffffff;
     top: 95px;
@@ -46,6 +46,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 140px;
   }
 }
 
@@ -68,6 +72,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: start;
+    min-width: 140px;
   }
 }
 

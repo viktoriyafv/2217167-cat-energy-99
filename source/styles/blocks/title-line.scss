@@ -12,15 +12,15 @@
 
   &::after {
     @include title-line;
-    width: calc(100vw - 20px);
+    width: calc(100vw - 40px);
 
     @media (min-width: $tablet-width) {
       top: 16;
-      width: calc(100vw - 30px);
+      width: calc(100vw - 50px);
     }
 
     @media (min-width: $desktop-width) {
-      width: calc(100vw - 110px);
+      width: calc(100vw - 130px);
     }
   }
 

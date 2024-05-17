@@ -36,14 +36,6 @@
   }
 }
 
-.add-catalog__title {
-  padding-bottom: 34px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
-  }
-}
-
 .add-catalog__container {
   @media (min-width: $desktop-width) {
     @include flex-between;

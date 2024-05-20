@@ -2,13 +2,16 @@
   @include flex-between;
 
   @media (min-width: $tablet-width) {
-    margin-right: 168px;
+    margin-right: auto;
+    max-width: 60%;
   }
 }
 
 .result-list__item {
   min-width: 124px;
+  max-width: 50%;
   text-align: center;
+  word-break: break-all;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {

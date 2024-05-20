@@ -1,8 +1,8 @@
 .site-list {
   @media (min-width: $tablet-width) {
     @include flex;
-
     color: $basic-color;
+    justify-content: end;
   }
 
   &--index {

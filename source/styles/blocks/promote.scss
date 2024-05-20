@@ -49,11 +49,12 @@
 
 .promote__description {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   width: 161px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 16px;
     line-height: 20px;
     text-align: start;

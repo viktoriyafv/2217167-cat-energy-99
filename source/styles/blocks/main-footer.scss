@@ -1,14 +1,11 @@
 .main-footer {
-  @include flex;
   background-color: $bacground-color;
   line-height: 5px;
-  flex-direction: column;
   padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    @include flex-between;
     padding: 55px 30px;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,7 +15,7 @@
 
 .main-footer__logo-link {
   display: block;
-  width: 280px;
+  min-width: 280px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 19px;
@@ -55,10 +52,11 @@
   @include flex-between;
   text-decoration: none;
   color: $primary-color;
-  width: 280px;
+  min-width: 280px;
   padding-top: 21px;
 
   @media (min-width: $tablet-width) {
+    min-width: auto;
     width: 168px;
     padding: 0;
   }

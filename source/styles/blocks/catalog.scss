@@ -1,7 +1,9 @@
 .catalog {
   padding-bottom: 24px;
+  border-top: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
+    border: none;
     padding: 62px 30px 70px;
   }
 

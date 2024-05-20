@@ -18,13 +18,12 @@
   }
 
   &--catalog {
-    background-image: none;
-
     @media (min-width: $tablet-width) {
       @include flex-between;
     }
 
     @media (min-width: $desktop-width) {
+      background-image: none;
       padding: 0;
     }
   }
@@ -32,14 +31,15 @@
 
 .main-header__container {
   padding: 13px 20px 14px;
-  width: 320px;
+  min-width: 320px;
   position: relative;
   min-height: 24px;
-  margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     padding: 25px 34px 0 30px;
     width: 768px;
     border: 0;
@@ -154,11 +154,10 @@
 
   .main-header__container--opened .main-header__nav {
     position: absolute;
-    top: 66px;
+    top: 65px;
     border-top: 1px solid $color-border;
     left: 0;
     z-index: 10;
-    min-height: 196px;
     min-width: 320px;
     width: 100%;
     background-color: #ffffff;

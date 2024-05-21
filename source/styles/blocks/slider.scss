@@ -8,6 +8,8 @@
   @media (min-width: $tablet-width) {
     width: min(100%, 560px);
     aspect-ratio: 560/512;
+    width: min(100%, 560px);
+    aspect-ratio: 560/512;
   }
 
   @media (min-width: $desktop-width) {

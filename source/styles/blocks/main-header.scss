@@ -30,9 +30,12 @@
   &--catalog {
     @media (min-width: $desktop-width) {
       width: 1440px;
-      background-image: none;
       padding: 0;
       margin: 0 auto;
+    }
+
+    &::before {
+      display: none;
     }
   }
 }

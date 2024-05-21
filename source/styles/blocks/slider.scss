@@ -1,8 +1,8 @@
 .slider {
   display: grid;
   grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
-	width: min(100%, 280px);
-	aspect-ratio: 280/256;
+  width: min(100%, 280px);
+  aspect-ratio: 280/256;
   --curtain-place: 0.5;
 
   @media (min-width: $tablet-width) {

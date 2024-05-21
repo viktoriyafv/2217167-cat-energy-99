@@ -1,13 +1,13 @@
 .slider {
   display: grid;
-  grid-template-columns: 140px auto 140px;
-  width: 280px;
-  height: 256px;
+  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+	width: min(100%, 280px);
+	aspect-ratio: 280/256;
+  --curtain-place: 0.5;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 280px auto 280px;
-    width: 560px;
-    height: 512px;
+    width: min(100%, 560px);
+    aspect-ratio: 560/512;
   }
 
   @media (min-width: $desktop-width) {

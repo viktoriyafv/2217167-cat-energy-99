@@ -25,16 +25,16 @@
   height: 256px;
   object-fit: cover;
 
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+
   &--fat {
     object-position: left;
   }
 
   &--thin {
     object-position: right;
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 512px;
   }
 }
 

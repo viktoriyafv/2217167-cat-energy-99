@@ -92,6 +92,14 @@
   border: none;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   &:hover,
   &:focus-visible {
     opacity: 0.6;
@@ -102,10 +110,6 @@
   }
 
   &:disabled {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
     display: none;
   }
 }

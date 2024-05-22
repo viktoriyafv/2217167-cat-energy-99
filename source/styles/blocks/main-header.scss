@@ -41,9 +41,7 @@
 }
 
 .main-header__container {
-  min-width: 320px;
   position: relative;
-  min-height: 24px;
 
 
   @media (min-width: $tablet-width) {
@@ -139,6 +137,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    padding-top: 14px;
   }
 
   @media (min-width: $desktop-width) {

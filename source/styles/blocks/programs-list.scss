@@ -1,7 +1,4 @@
 .programs-list {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
@@ -9,25 +6,18 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include flex-between;
     width: 1440px;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 82px 110px 71px;
     margin: 0 auto;
   }
 }
 
 .programs-list__item {
-  min-width: 280px;
   background-color: $bacground-color;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
-    min-width: 708px;
-  }
-
   @media (min-width: $desktop-width) {
-    min-width: auto;
     width: 570px;
   }
 }

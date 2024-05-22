@@ -1,13 +1,4 @@
-.main-nav {
-  @media (min-width: $tablet-width) {
-    padding-top: 14px;
-  }
-}
-
 .main-nav__list {
-  @include reset-list;
-  text-align: center;
-
   @media (min-width: $tablet-width) {
     gap: 33px;
     width: 436px;

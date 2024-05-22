@@ -7,9 +7,9 @@
     url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
     url("../../images/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
     url("../../images/index-background-mobile@2x.jpg") type("image/jpeg") 2x),
-    linear-gradient(90deg, #64a73b 50%, #61a53a 50%);
+    linear-gradient(to bottom, #64a73b 63%, #ffffff 47%);
   background-repeat: no-repeat;
-  background-size: 320px 302px, 100% 302px;
+  background-size: 320px 302px, cover;
   background-position: 50% top;
 
   @media (min-width: $tablet-width) {

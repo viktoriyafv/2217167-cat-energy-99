@@ -27,7 +27,7 @@
 
   &::after {
     @include title-line;
-    width: calc(100vw - 40px);
+    width: calc(100vw - 20px);
 
     @media (min-width: $tablet-width) {
       top: 16;

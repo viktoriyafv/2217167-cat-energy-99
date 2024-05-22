@@ -14,12 +14,10 @@
 
 .partnership__container {
   @include flex-between;
-  min-width: 320px;
   margin: 0;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
     padding: 60px 70px;
   }
 

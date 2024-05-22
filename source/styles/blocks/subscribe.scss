@@ -16,6 +16,10 @@
 
 .subscribe__title {
   @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 72px;
   }
 }
@@ -35,10 +39,11 @@
     font-size: 24px;
     line-height: 32px;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-bottom: 24px;
   }
 }

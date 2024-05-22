@@ -31,11 +31,12 @@
 
     @media (min-width: $tablet-width) {
       top: 16;
-      width: calc(100vw - 50px);
+      width: calc(100vw - 30px);
     }
 
     @media (min-width: $desktop-width) {
-      width: calc(100vw - 130px);
+      top: 18;
+      width: calc(100vw - 110px);
     }
   }
 
@@ -48,7 +49,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 17;
+      top: 18;
       width: 70px;
       left: -110px;
     }

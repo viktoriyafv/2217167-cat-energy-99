@@ -30,7 +30,7 @@
     width: calc(100vw - 20px);
 
     @media (min-width: $tablet-width) {
-      top: 16;
+      top: 12;
       width: calc(100vw - 30px);
     }
 
@@ -44,7 +44,7 @@
     @media (min-width: $tablet-width) {
       @include title-line;
       width: 30px;
-      top: 16;
+      top: 12;
       left: -30px;
     }
 

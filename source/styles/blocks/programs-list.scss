@@ -8,6 +8,7 @@
   @media (min-width: $desktop-width) {
     @include flex-between;
     width: 1440px;
+    gap: 40px;
     padding: 82px 110px 71px;
     margin: 0 auto;
   }
@@ -22,38 +23,4 @@
   }
 }
 
-.programs-list__item--slim {
-  background-image: url("../../icons/stack.svg#cat-slim");
-  background-size: 50px 53px;
-  background-position: left 20px top 21px;
-  margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
-    background-size: 200px 211px;
-    background-position: right 63px top 81px;
-    margin-bottom: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-size: 100px 106px;
-    background-position: 52px 41px;
-    margin: 0;
-  }
-}
-
-.programs-list__item--pro {
-  background-image: url("../../icons/stack.svg#cat-pro");
-  background-size: 67px 50px;
-  background-position: left 12px top 24px;
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#cat-pro");
-    background-size: 268px 200px;
-    background-position: right 29px top 91px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-size: 134px 100px;
-    background-position: 33px 47px;
-  }
-}

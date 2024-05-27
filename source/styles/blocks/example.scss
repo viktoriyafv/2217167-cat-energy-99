@@ -22,9 +22,11 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    position: relative;
-    padding: 0 110px 75px;
+    display: grid;
+    grid-template-rows: auto auto auto 75px;
+    grid-template-columns: auto 436px 224px 560px auto;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -46,6 +48,7 @@
   @media (min-width: $desktop-width) {
     width: 800px;
     margin-bottom: 148px;
+    grid-area: 1 / 2 / 2 / 3;
   }
 }
 
@@ -63,6 +66,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     margin-bottom: 67px;
+    grid-area: 2 / 2 / 3 / 3;
   }
 }
 
@@ -78,6 +82,7 @@
     display: block;
     width: 367px;
     margin: 0;
+    grid-area: 3 / 2 / 3 / 4;
   }
 }
 
@@ -136,10 +141,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 110px;
-    margin: 0 auto;
+    margin: 0;
+    grid-area: 1 / 4 / 5 / 5;
   }
 }

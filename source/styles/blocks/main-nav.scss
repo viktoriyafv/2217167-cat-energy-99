@@ -1,4 +1,6 @@
 .main-nav__list {
+  @include reset-list;
+
   @media (min-width: $tablet-width) {
     gap: 33px;
     width: 436px;

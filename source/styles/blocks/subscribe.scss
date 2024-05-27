@@ -1,20 +1,19 @@
 .subscribe {
-  min-width: 320px;
   padding: 40px 20px;
 
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
     padding: 80px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1440px;
     padding: 96px 110px 104px;
   }
 }
 
 .subscribe__title {
+  margin-bottom: 32px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
   }

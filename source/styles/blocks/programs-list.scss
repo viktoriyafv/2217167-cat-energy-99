@@ -17,8 +17,18 @@
 .programs-list__item {
   background-color: $bacground-color;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin-bottom: 0;
   }
+}
+
+.programs-list__item:last-child {
+  margin-bottom: 0;
 }

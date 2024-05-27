@@ -1,4 +1,4 @@
-.catalog__list {
+.catalog-list {
   display: flex;
   flex-direction: column;
 
@@ -78,6 +78,7 @@
     margin-bottom: 13px;
   }
 
+  &:hover,
   &:focus {
     opacity: 0.6;
   }
@@ -119,15 +120,11 @@
   }
 
   &--products {
-    width: 280px;
     background-color: $bacground-color;
-    border: none;
     color: $primary-color;
     padding: 10px 94px;
-    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      width: 250px;
       padding: 10px 80px 10px 73px;
     }
 

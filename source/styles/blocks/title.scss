@@ -1,4 +1,4 @@
-.title-line {
+.title__line {
   @include title;
   width: fit-content;
   background: #ffffff;
@@ -7,7 +7,7 @@
   font-size: 24px;
   line-height: 24px;
   padding-right: 40px;
-  padding-bottom: 33px;
+  margin-bottom: 33px;
   position: relative;
 
   @media (min-width: $tablet-width) {

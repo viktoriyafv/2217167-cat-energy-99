@@ -7,7 +7,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 77px 61px 55px 52px;
-    width: 570px;
   }
 }
 
@@ -15,18 +14,15 @@
   background-image: url("../../icons/stack.svg#cat-slim");
   background-size: 50px 53px;
   background-position: left 20px top 21px;
-  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     background-size: 200px 211px;
     background-position: right 63px top 81px;
-    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 100px 106px;
     background-position: 52px 41px;
-    margin: 0;
   }
 }
 

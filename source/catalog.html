@@ -78,7 +78,7 @@
                 <source width="140" height="107" type="image/webp"
                   srcset="images/catalog-mobile-1@1x.webp 1x, images/catalog-mobile-1@2x.webp 2x">
                 <img class="catalog-list__link-image" src="images/catalog-mobile-1@1x.png" width="140" height="107"
-                  srcset="images/catalog-mobile-1@2x.png 2x" alt="Cat Energy PRO с курицей 500гр">
+                  srcset="images/catalog-mobile-1@2x.png 2x" alt="Cat Energy PRO с курицей 500гр" fetchpriority="high">
               </picture>
             </a>
             <div class="catalog-list__content content">
@@ -121,7 +121,7 @@
                 <source width="140" height="107" type="image/webp"
                   srcset="images/catalog-mobile-2@1x.webp 1x, images/catalog-mobile-2@2x.webp 2x">
                 <img class="catalog-list__link-image" src="images/catalog-mobile-2@1x.png" width="140" height="107"
-                  srcset="images/catalog-mobile-2@2x.png 2x" alt="Cat Energy PRO с курицей 1000гр">
+                  srcset="images/catalog-mobile-2@2x.png 2x" alt="Cat Energy PRO с курицей 1000гр" fetchpriority="high">
               </picture>
             </a>
             <div class="catalog-list__content content">
@@ -164,7 +164,7 @@
                 <source width="140" height="107" type="image/webp"
                   srcset="images/catalog-mobile-3@1x.webp 1x, images/catalog-mobile-3@2x.webp 2x">
                 <img class="catalog-list__link-image" src="images/catalog-mobile-3@1x.png" width="140" height="107"
-                  srcset="images/catalog-mobile-3@2x.png 2x" alt="Cat Energy PRO с рыбой 500гр">
+                  srcset="images/catalog-mobile-3@2x.png 2x" alt="Cat Energy PRO с рыбой 500гр" fetchpriority="high">
               </picture>
             </a>
             <div class="catalog-list__content content">
@@ -207,7 +207,7 @@
                 <source width="140" height="107" type="image/webp"
                   srcset="images/catalog-mobile-4@1x.webp 1x, images/catalog-mobile-4@2x.webp 2x">
                 <img class="catalog-list__link-image" src="images/catalog-mobile-4@1x.png" width="140" height="107"
-                  srcset="images/catalog-mobile-4@2x.png 2x" alt="Cat Energy PRO с рыбой 1000гр">
+                  srcset="images/catalog-mobile-4@2x.png 2x" alt="Cat Energy PRO с рыбой 1000гр" fetchpriority="high">
               </picture>
             </a>
             <div class="catalog-list__content content">
@@ -250,7 +250,7 @@
                 <source width="140" height="107" type="image/webp"
                   srcset="images/catalog-mobile-5@1x.webp 1x, images/catalog-mobile-5@2x.webp 2x">
                 <img class="catalog-list__link-image" src="images/catalog-mobile-5@1x.png" width="140" height="107"
-                  srcset="images/catalog-mobile-5@2x.png 2x" alt="Cat Energy SLIM с гречей 500гр">
+                  srcset="images/catalog-mobile-5@2x.png 2x" alt="Cat Energy SLIM с гречей 500гр" fetchpriority="high">
               </picture>
             </a>
             <div class="catalog-list__content content">
@@ -293,7 +293,7 @@
                 <source width="140" height="107" type="image/webp"
                   srcset="images/catalog-mobile-6@1x.webp 1x, images/catalog-mobile-6@2x.webp 2x">
                 <img class="catalog-list__link-image" src="images/catalog-mobile-6@1x.png" width="140" height="107"
-                  srcset="images/catalog-mobile-6@2x.png 2x" alt="Cat Energy SLIM с гречей 1000гр">
+                  srcset="images/catalog-mobile-6@2x.png 2x" alt="Cat Energy SLIM с гречей 1000гр" fetchpriority="high">
               </picture>
             </a>
             <div class="catalog-list__content content">
@@ -336,7 +336,7 @@
                 <source width="140" height="107" type="image/webp"
                   srcset="images/catalog-mobile-7@1x.webp 1x, images/catalog-mobile-7@2x.webp 2x">
                 <img class="catalog-list__link-image" src="images/catalog-mobile-7@1x.png" width="140" height="107"
-                  srcset="images/catalog-mobile-7@2x.png 2x" alt="Cat Energy SLIM с рисом 500гр">
+                  srcset="images/catalog-mobile-7@2x.png 2x" alt="Cat Energy SLIM с рисом 500гр" fetchpriority="high">
               </picture>
             </a>
             <div class="catalog-list__content content">
@@ -367,20 +367,22 @@
         <li class="catalog-list__item catalog-list__item--products products">
           <h3 class="products__title">Показать еще 100500 товаров</h3>
           <p class="products__description">На самом деле вкусов гораздо больше!</p>
-          <button class="catalog-list__button catalog-list__button--products button" type="button">
+          <a class="catalog-list__button catalog-list__button--products button" href="#">
             показать все
-          </button>
+          </a>
         </li>
 
       </ul>
     </section>
-    <section class="add-catalog" data-test="additional">
-      <h2 class="add-catalog__title title-line">Дополнительные товары</h2>
+    <section class="add-catalog title" data-test="additional">
+      <h2 class="add-catalog__title title__line">Дополнительные товары</h2>
       <div class="add-catalog__container">
         <ul class="add-catalog__list add-catalog-list">
 
           <li class="add-catalog-list__item">
-            <h3 class="add-catalog-list__title">Сахарозаменитель</h3>
+            <a class="add-catalog-list__link" href="#">
+              <h3 class="add-catalog-list__title">Сахарозаменитель</h3>
+            </a>
             <p class="add-catalog-list__description">
               <span class="add-catalog-list__key">1 упаковка (100 г)</span>
               <span class="add-catalog-list__value">200 ₽</span>
@@ -391,7 +393,9 @@
           </li>
 
           <li class="add-catalog-list__item">
-            <h3 class="add-catalog-list__title">питьевая вода</h3>
+            <a class="add-catalog-list__link" href="#">
+              <h3 class="add-catalog-list__title">питьевая вода</h3>
+            </a>
             <p class="add-catalog-list__description">
               <span class="add-catalog-list__key">5 литров</span>
               <span class="add-catalog-list__value">50 ₽</span>
@@ -402,7 +406,9 @@
           </li>
 
           <li class="add-catalog-list__item">
-            <h3 class="add-catalog-list__title">молоко</h3>
+            <a class="add-catalog-list__link" href="#">
+              <h3 class="add-catalog-list__title">молоко</h3>
+            </a>
             <p class="add-catalog-list__description">
               <span class="add-catalog-list__key">1 литр</span>
               <span class="add-catalog-list__value">100 ₽</span>
@@ -413,7 +419,9 @@
           </li>
 
           <li class="add-catalog-list__item">
-            <h3 class="add-catalog-list__title">витамины</h3>
+            <a class="add-catalog-list__link" href="#">
+              <h3 class="add-catalog-list__title">витамины</h3>
+            </a>
             <p class="add-catalog-list__description">
               <span class="add-catalog-list__key">1 упаковка (30 г)</span>
               <span class="add-catalog-list__value">300 ₽</span>
@@ -429,8 +437,8 @@
         </div>
       </div>
     </section>
-    <section class="subscribe">
-      <h2 class="subscribe__title title-line">Акции и новинки</h2>
+    <section class="subscribe title">
+      <h2 class="subscribe__title title__line">Акции и новинки</h2>
       <div class="subscribe__container">
         <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
@@ -455,7 +463,7 @@
         <iframe class="partnership__map-yandex"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c40ab8cc834ad5131302a3477414d73b42b08ef273393e483ae1275f68a1c34&amp;source=constructor"
           width="320" height="362" allowfullscreen
-          title="Офис компании по адресу Большая Конюшенная, д. 19/8, г. Санкт-Петербург"></iframe>
+          title="Офис компании по адресу Большая Конюшенная, д. 19/8, г. Санкт-Петербург" loading="lazy"></iframe>
       </div>
       <div class="partnership__picture">
         <span class="visually-hidden">Офис компании по адресу Большая Конюшенная, д. 19/8, г. Санкт-Петербург</span>

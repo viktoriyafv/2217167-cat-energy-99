@@ -1,3 +1,3 @@
-const navMain = document.querySelector('.partnership');
+const PartnerShip = document.querySelector('.partnership');
 
-navMain.classList.remove('partnership--nojs');
+PartnerShip.classList.remove('partnership--nojs');

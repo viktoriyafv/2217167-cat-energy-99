@@ -7,10 +7,11 @@
     image-set(url("../../images/promote-background-mobile@1x.webp") type("image/webp") 1x,
     url("../../images/promote-background-mobile@2x.webp") type("image/webp") 2x,
     url("../../images/promote-background-mobile@1x.jpg") type("image/jpeg") 1x,
-    url("../../images/promote-background-mobile@2x.jpg") type("image/jpeg") 2x);
+    url("../../images/promote-background-mobile@2x.jpg") type("image/jpeg") 2x),
+    linear-gradient(#ffffff, #ffffff 50%);
   background-repeat: no-repeat;
-  background-size: 78px 80px, cover, 280px 290px;
-  background-position: 50% 59px, 100%, 50% 0;
+  background-size: 78px 80px, cover, 280px 290px, cover;
+  background-position: 50% 59px, 100%, 50% 0, 100%;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -26,9 +27,10 @@
       image-set(url("../../images/promote-background-tablet@1x.webp") type("image/webp") 1x,
       url("../../images/promote-background-tablet@2x.webp") type("image/webp") 2x,
       url("../../images/promote-background-tablet@1x.jpg") type("image/jpeg") 1x,
-      url("../../images/promote-background-tablet@2x.jpg") type("image/jpeg") 2x);
-    background-size: 80px 83px, cover, 708px 200px;
-    background-position: 77px 50%, 100%, 50% 0;
+      url("../../images/promote-background-tablet@2x.jpg") type("image/jpeg") 2x),
+      linear-gradient(#ffffff, #ffffff 50%);
+    background-size: 80px 83px, cover, 708px 200px, cover;
+    background-position: 77px 50%, 100%, 50% 0, 100%;
     padding: 71px 125px 69px 421px;
   }
 
@@ -41,9 +43,10 @@
       image-set(url("../../images/promote-background-desktop@1x.webp") type("image/webp") 1x,
       url("../../images/promote-background-desktop@2x.webp") type("image/webp") 2x,
       url("../../images/promote-background-desktop@1x.jpg") type("image/jpeg") 1x,
-      url("../../images/promote-background-desktop@2x.jpg") type("image/jpeg") 2x);
-    background-size: 80px 83px, cover, 245px 288px;
-    background-position: 50% 56px, 100%, 50% 0;
+      url("../../images/promote-background-desktop@2x.jpg") type("image/jpeg") 2x),
+      linear-gradient(#9c9c9c, #9c9c9c 50%);
+    background-size: 80px 83px, cover, 245px 288px, cover;
+    background-position: 50% 56px, top, top, top;
     padding: 185px 42px 43px;
   }
 }

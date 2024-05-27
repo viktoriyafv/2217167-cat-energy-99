@@ -21,7 +21,8 @@
 }
 
 .content__link {
-  &:focus {
+  &:focus,
+  &:hover {
     opacity: 0.6;
   }
 

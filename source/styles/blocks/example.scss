@@ -45,7 +45,7 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
-    margin-bottom: 146px;
+    margin-bottom: 148px;
   }
 }
 
@@ -62,11 +62,11 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 }
 
-.example__list-container {
+.example__list {
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -86,6 +86,8 @@
 
   @media (min-width: $tablet-width) {
     min-width: 367px;
+    max-width: 60%;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,5 +123,23 @@
 }
 
 .example__slider {
+  display: grid;
+  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+  width: min(100%, 280px);
+  aspect-ratio: 280/256;
+  --curtain-place: 0.5;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: min(100%, 560px);
+    aspect-ratio: 560/512;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 110px;
+    margin: 0 auto;
+  }
 }

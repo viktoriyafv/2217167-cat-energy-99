@@ -1,17 +1,14 @@
 .specification {
-  margin: 0 auto;
   padding: 0 20px;
 
 
   @media (min-width: $tablet-width) {
     padding: 0 105px 47px 30px;
     border-bottom: 1px solid #e6e6e6;
-    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 106px 69px 110px;
-    width: 1440px;
     border: none;
   }
 }
@@ -70,7 +67,8 @@
 
   @media (min-width: $desktop-width) {
     &--change {
-      width: 248px;
+      width: 249px;
+      padding-left: 2px;
     }
 
     &--effect {

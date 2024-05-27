@@ -1,6 +1,8 @@
 .partnership {
   @media (min-width: $desktop-width) {
-    position: relative;
+    grid-template-rows: 95px auto auto;
+    grid-template-columns: 110px 565px auto 565px 110px;
+    display: grid;
   }
 
   &--catalog {
@@ -22,13 +24,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 565px;
+    grid-area: 2 / 2 / 3 / 3;
+    width: 565px;
     height: 199px;
-    position: absolute;
     background-color: #ffffff;
-    top: 95px;
-    left: 110px;
     padding: 60px 80px 60px 78px;
+    z-index: 2;
   }
 }
 
@@ -79,6 +80,10 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 1 / 6 / 6;
   }
 }
 

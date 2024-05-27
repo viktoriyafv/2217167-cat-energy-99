@@ -44,8 +44,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flex-between;
+    @include flex;
     align-items: baseline;
+    gap: 30px 78px;
   }
 }
 

@@ -1,7 +1,7 @@
 .partnership {
   @media (min-width: $desktop-width) {
     grid-template-rows: 95px auto auto;
-    grid-template-columns: 110px 565px auto 565px 110px;
+    grid-template-columns: auto 565px 90px 565px auto;
     display: grid;
   }
 

@@ -3,6 +3,7 @@
   color: #ffffff;
 
   @media (max-width: $mobile-width-only) {
+    background-color: $accent-color;
     background-image:
       image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
@@ -16,6 +17,7 @@
 
   @media (min-width: $tablet-width) {
     color: $basic-color;
+    background-color: transparent;
   }
 }
 

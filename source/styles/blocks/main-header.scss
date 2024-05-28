@@ -17,7 +17,7 @@
         linear-gradient(#413e44, #413e44 50%);
       background-repeat: no-repeat;
       background-size: cover, auto 694px, 100%;
-      background-position: 100% top, bottom left, 100% top;
+      background-position: 100% top, top left, 100% top;
       width: 50%;
       min-height: 100%;
       display: block;
@@ -61,7 +61,7 @@
   text-decoration: none;
   display: block;
   height: 65px;
-  padding: 13px 20px 14px;
+  padding: 13px 20px 15px;
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
@@ -170,8 +170,11 @@
 
   .main-header__container--opened .main-header__toggle {
     mask-image: url("../../icons/stack.svg#menu-close");
-    mask-size: 18px 18px;
+    mask-size: 20px 20px;
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
+    width: 20px;
+    height: 21px;
+    right: 20px;
   }
 }

@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-size: 320px 302px, cover;
     background-position: 50% top;
+    padding-bottom: 2px;
   }
 
   @media (min-width: $tablet-width) {
@@ -119,7 +120,7 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    bottom: 52px;
+    top: 143px;
     left: 557px;
   }
 }

@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to top, $bacground-color 462px, #ffffff 462px);
+    background-image: linear-gradient(to bottom, #ffffff 136px, $bacground-color 136px);
     padding: 0;
   }
 }

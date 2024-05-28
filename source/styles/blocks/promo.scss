@@ -2,42 +2,52 @@
   font-family: $secondary-font;
   color: #ffffff;
 
-  @media (max-width: $mobile-width-only) {
-    background-color: $accent-color;
-    background-image:
-      image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
-      url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
-      url("../../images/index-background-mobile@2x.jpg") type("image/jpeg") 2x),
-      linear-gradient(to bottom, #64a73b 60%, #ffffff 40%);
-    background-repeat: no-repeat;
-    background-size: 320px 302px, cover;
-    background-position: 50% top;
-    padding-bottom: 2px;
-  }
-
   @media (min-width: $tablet-width) {
     color: $basic-color;
-    background-color: transparent;
-    padding-bottom: 0;
   }
 }
 
 
 .promo__container {
-  padding: 27px 20px 0;
-  width: 320px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto auto 135px 138px auto;
+  grid-template-columns: auto 280px auto;
+
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 768px;
     padding: 65px 30px 580px 120px;
     position: relative;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 110px 110px 184px 190px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: static;
+    background-color: $accent-color;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/index-background-mobile@2x.jpg") type("image/jpeg") 2x),
+      linear-gradient(90deg, #4e4e53 50%, #434247 50%);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover, auto 302px, cover;
+    grid-area: 1 / 1 / 4 / 4;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -46,10 +56,13 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin-bottom: 25px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  grid-area: 1 / 2 / 2 / 3;
 
   @media (min-width: $tablet-width) {
     width: 420px;
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -68,9 +81,11 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 29px;
+  padding-bottom: 29px;
+  grid-area: 2 / 2 / 3 / 3;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
@@ -86,7 +101,7 @@
 .promo__button {
   width: 280px;
   padding: 10px 44px;
-  margin: 0 auto;
+  grid-area: 5 / 2 / 6 / 3;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -103,10 +118,11 @@
   }
 }
 
+.promo__picture {
+  grid-area: 3 / 2 / 5 / 3;
+}
+
 .promo__image {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 3px;
   width: 280px;
   height: 270px;
 
@@ -121,7 +137,7 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    top: 143px;
-    left: 557px;
+    top: 30;
+    left: 557;
   }
 }

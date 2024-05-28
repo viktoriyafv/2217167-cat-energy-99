@@ -16,17 +16,19 @@
 
 .partnership__container {
   @include flex-between;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 60px 70px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: 2 / 2 / 3 / 3;
     width: 565px;
-    height: 199px;
+    min-height: 199px;
     background-color: #ffffff;
     padding: 60px 80px 60px 78px;
     z-index: 2;
@@ -84,6 +86,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 1 / 1 / 6 / 6;
+    height: auto;
   }
 }
 
@@ -97,6 +100,11 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    min-height: 400px;
+  }
 }
 
 .partnership--nojs .partnership__map {
@@ -105,34 +113,38 @@
 
 .partnership__picture {
   display: none;
+  width: 320px;
   height: 362px;
   background-image:
     image-set(url("../../images/map-mobile@1x.webp") type("image/webp") 1x,
     url("../../images/map-mobile@2x.webp") type("image/webp") 2x,
     url("../../images/map-mobile@1x.jpg") type("image/jpeg") 1x,
     url("../../images/map-mobile@2x.jpg") type("image/jpeg") 2x);
-  background-size: 100% 362px;
+  background-size: 320px 362px;
   background-repeat: no-repeat;
   z-index: 1;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
     background-image:
       image-set(url("../../images/map-tablet@1x.webp") type("image/webp") 1x,
       url("../../images/map-tablet@2x.webp") type("image/webp") 2x,
       url("../../images/map-tablet@1x.jpg") type("image/jpeg") 1x,
       url("../../images/map-tablet@2x.jpg") type("image/jpeg") 2x);
-    background-size: 100% 400px;
-    height: 400px;
+    background-size: 768px 400px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: 1 / 1 / 6 / 6;
+    width: 1440px;
     background-image:
       image-set(url("../../images/map-desktop@1x.webp") type("image/webp") 1x,
       url("../../images/map-desktop@2x.webp") type("image/webp") 2x,
       url("../../images/map-desktop@1x.jpg") type("image/jpeg") 1x,
       url("../../images/map-desktop@2x.jpg") type("image/jpeg") 2x);
-    background-size: 100% 400px;
+    background-size: 1440px 400px;
   }
 }
 

@@ -4,12 +4,23 @@
   padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
-    @include flex-between;
     padding: 55px 30px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__container {
+  @media (min-width: $tablet-width) {
+    @include flex-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
     padding: 66px 110px;
+    margin: 0 auto;
   }
 }
 
@@ -62,7 +73,8 @@
   @include flex-between;
   text-decoration: none;
   color: $primary-color;
-  min-width: 280px;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 21px;
 
   @media (min-width: $tablet-width) {
